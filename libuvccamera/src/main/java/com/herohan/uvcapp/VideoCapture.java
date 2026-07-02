@@ -1004,7 +1004,7 @@ public class VideoCapture {
 
             AudioRecord recorder =
                     new AudioRecord(
-                            MediaRecorder.AudioSource.CAMCORDER,
+                            MediaRecorder.AudioSource.MIC,
                             mAudioSampleRate,
                             channelConfig,
                             AudioFormat.ENCODING_PCM_16BIT,
@@ -1015,7 +1015,7 @@ public class VideoCapture {
                 Log.i(
                         TAG,
                         "source: "
-                                + MediaRecorder.AudioSource.CAMCORDER
+                                + MediaRecorder.AudioSource.MIC
                                 + " audioSampleRate: "
                                 + mAudioSampleRate
                                 + " channelConfig: "
